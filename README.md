@@ -1,2 +1,1 @@
-# nadias-gallery
-Nadia's art gallery site
+# Nadia's gallery
