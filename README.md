@@ -1,8 +1,9 @@
 # Nadia's gallery
 
 ### sections
-- about, link to Etsy and Upwork
+- about intro
 - gallery with lightbox
+- link to Etsy and Upwork
 
 ### ideas
 - splash screen
