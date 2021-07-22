@@ -11,7 +11,7 @@ import Gallery from '@/components/Gallery.vue';
 export default {
     name: 'Nadia\'s Gallery',
     components: {
-      Gallery,
+        Gallery,
     },
 };
 

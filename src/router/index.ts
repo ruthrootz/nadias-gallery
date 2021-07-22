@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
-import Gallery from '../views/Gallery.vue';
+import Home from '@/views/Home.vue';
 
 Vue.use(VueRouter);
 
@@ -8,7 +8,7 @@ const routes: RouteConfig[] = [
     {
         path: '/',
         name: 'Nadia\'s Gallery',
-        component: Gallery,
+        component: Home,
     },
     // {
         // path: '/about',
