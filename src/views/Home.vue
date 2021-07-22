@@ -1,7 +1,7 @@
 <template>
-  <div class="home">
-    <gallery msg="Welcome to Nadia's gallery!"/>
-  </div>
+    <div class="home">
+        <gallery msg="Welcome to Nadia's gallery!"/>
+    </div>
 </template>
 
 <script>
