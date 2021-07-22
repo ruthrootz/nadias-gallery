@@ -14,3 +14,27 @@
 - each image has a bottom-and-right drop shadow
 - fade images into view on scroll
     - https://dev.to/selbekk/how-to-fade-in-content-as-it-scrolls-into-view-10j4
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
