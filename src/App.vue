@@ -29,6 +29,11 @@
 #nav {
     padding: 30px;
     background-color: #F2E9E4;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #nav a {
