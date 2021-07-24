@@ -14,10 +14,11 @@
     </div>
 </template>
 
+
 <style>
 
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: 'Lobster', cursive;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -26,18 +27,17 @@
 
 #nav {
     padding: 30px;
+    background-color: #F2E3D5;
 }
 
 #nav a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #261C10;
 }
 
 #nav a.router-link-exact-active {
-    color: #400020;
+    color: #261C10;
 }
-
-
 
 </style>
 
