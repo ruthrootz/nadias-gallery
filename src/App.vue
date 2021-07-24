@@ -26,22 +26,22 @@
 
 #nav {
     padding: 30px;
-    background-color: #F2E3D5;
+    background-color: #F2E9E4;
 }
 
 #nav a {
     font-weight: bold;
     font-size: 3rem;
-    color: #261C10;
+    color: #732735;
     text-decoration: none;
 }
 
 #nav a.router-link-exact-active {
-    color: #261C10;
+    color: #732735;
 }
 
 #nav .navbar {
-    background-color: #F2E3D5 !important;
+    background-color: #F2E9E4 !important;
 }
 
 </style>
