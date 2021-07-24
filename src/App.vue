@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <div id="nav">
+        <div id="nav" class="shadow">
             <b-navbar type="light" variant="light" sticky="true">
                 <b-navbar-brand href="#">
                     <router-link to="/">Nadia's Gallery</router-link>
@@ -21,7 +21,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
+    background-color: #D9CBBF;
 }
 
 #nav {
