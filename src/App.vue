@@ -1,7 +1,14 @@
 <template>
     <div id="app">
         <div id="nav">
-            <router-link to="/">Nadia's Gallery</router-link>
+            <b-navbar type="light" variant="light" sticky="true">
+                <b-navbar-brand href="#">
+                    <router-link to="/">Nadia's Gallery</router-link>
+                </b-navbar-brand>
+                <b-navbar-nav class="ml-auto">
+                    <b-nav-item></b-nav-item>
+                </b-navbar-nav>
+            </b-navbar>
         </div>
         <router-view/>
     </div>
@@ -27,8 +34,10 @@
 }
 
 #nav a.router-link-exact-active {
-    color: #42b983;
+    color: #400020;
 }
+
+
 
 </style>
 
