@@ -1,5 +1,12 @@
 <template>
     <div class="gallery">
+       <div class="section"
+            <div v-for="image in images">
+                <b-card>
+
+                </b-card>
+            </div>
+       </div>
     </div>
 </template>
 
