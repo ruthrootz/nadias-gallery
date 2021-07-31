@@ -1,9 +1,11 @@
 <template>
     <div class="gallery">
-       <div class="section"
+        <div class="section">
             <div v-for="image in images">
-                <b-card>
-
+                <b-card class="text-center"
+                        img-src="image.srouce"
+                        img-alt="image.title"
+                        img-top>
                 </b-card>
             </div>
        </div>
