@@ -3,7 +3,7 @@
         <div class="section">
             <div v-for="image in images">
                 <b-card class="text-center"
-                        :img-src="image.srouce"
+                        :img-src="image.source"
                         :img-alt="image.title"
                         :img-top>
                 </b-card>
@@ -19,7 +19,7 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 @Component
 export default class Gallery extends Vue {
 
-    private images: string[] = [
+    private images: any[] = [
         {
             source: 'https://placedog.net/500/280',
             title: 'test 1',
