@@ -17,7 +17,13 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 @Component
 export default class Gallery extends Vue {
 
-    @Prop() private msg!: string;
+    private images: string[] = [
+        'https://placedog.net/500/280',
+        'https://placedog.net/500/280',
+        'https://placedog.net/500/280',
+        'https://placedog.net/500/280',
+        'https://placedog.net/500/280',
+    ];
 
 }
 
