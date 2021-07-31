@@ -1,13 +1,12 @@
 <template>
     <div class="gallery">
         <div class="section">
-            <div v-for="image in images">
-                <b-card class="text-center"
-                        :img-src="image.source"
-                        :img-alt="image.title"
-                        :img-top>
-                </b-card>
-            </div>
+            <b-card v-for="image in images"
+                    class="text-center"
+                    :img-src="image.source"
+                    :img-alt="image.title"
+                    :img-top>
+            </b-card>
        </div>
     </div>
 </template>
