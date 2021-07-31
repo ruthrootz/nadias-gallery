@@ -3,9 +3,9 @@
         <div class="section">
             <div v-for="image in images">
                 <b-card class="text-center"
-                        img-src="image.srouce"
-                        img-alt="image.title"
-                        img-top>
+                        :img-src="image.srouce"
+                        :img-alt="image.title"
+                        :img-top>
                 </b-card>
             </div>
        </div>
@@ -20,11 +20,26 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 export default class Gallery extends Vue {
 
     private images: string[] = [
-        'https://placedog.net/500/280',
-        'https://placedog.net/500/280',
-        'https://placedog.net/500/280',
-        'https://placedog.net/500/280',
-        'https://placedog.net/500/280',
+        {
+            source: 'https://placedog.net/500/280',
+            title: 'test 1',
+        },
+        {
+            source: 'https://placedog.net/500/280',
+            title: 'test 2',
+        },
+        {
+            source: 'https://placedog.net/500/280',
+            title: 'test 3',
+        },
+        {
+            source: 'https://placedog.net/500/280',
+            title: 'test 4',
+        },
+        {
+            source: 'https://placedog.net/500/280',
+            title: 'test 5',
+        },
     ];
 
 }
