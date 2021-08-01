@@ -5,7 +5,7 @@
                     class="text-center"
                     :img-src="image.source"
                     :img-alt="image.title"
-                    :img-top>
+                    img-top>
             </b-card>
        </div>
     </div>
