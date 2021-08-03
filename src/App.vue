@@ -45,6 +45,7 @@
 
 #nav a.router-link-exact-active {
     color: #732735;
+    margin: 10%;
 }
 
 #nav .navbar {
