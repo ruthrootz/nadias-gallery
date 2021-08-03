@@ -20,23 +20,23 @@ export default class Gallery extends Vue {
 
     private images: any[] = [
         {
-            source: 'https://placedog.net/500/280',
+            source: 'https://placedog.net/500/500?random',
             title: 'test 1',
         },
         {
-            source: 'https://placedog.net/500/280',
+            source: 'https://placedog.net/500/500?random',
             title: 'test 2',
         },
         {
-            source: 'https://placedog.net/500/280',
+            source: 'https://placedog.net/500/500?random',
             title: 'test 3',
         },
         {
-            source: 'https://placedog.net/500/280',
+            source: 'https://placedog.net/500/500?random',
             title: 'test 4',
         },
         {
-            source: 'https://placedog.net/500/280',
+            source: 'https://placedog.net/500/500?random',
             title: 'test 5',
         },
     ];
@@ -63,6 +63,11 @@ li {
 
 a {
     color: #42b983;
+}
+
+.art-card {
+    width: 30%;
+    margin: 3%;
 }
 
 </style>
