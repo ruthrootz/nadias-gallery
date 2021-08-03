@@ -2,7 +2,7 @@
     <div class="gallery">
         <div class="section">
             <b-card v-for="image in images"
-                    class="text-center"
+                    class="shadow text-center"
                     :img-src="image.source"
                     :img-alt="image.title"
                     img-top>
