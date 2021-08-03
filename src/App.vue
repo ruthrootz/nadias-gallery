@@ -5,10 +5,10 @@
                 <b-navbar-brand href="#">
                     <router-link to="/">Nadia's Gallery</router-link>
                 </b-navbar-brand>
-                <b-navbar-nav class="ml-auto">
-                    <b-nav-item>Etsy</b-nav-item>
-                    <b-nav-item>Upwork</b-nav-item>
-                    <b-nav-item>Instagram</b-nav-item>
+                <b-navbar-nav class="m-1">
+                    <b-nav-item class="link">Etsy</b-nav-item>
+                    <b-nav-item class="link">Upwork</b-nav-item>
+                    <b-nav-item class="link">Instagram</b-nav-item>
                 </b-navbar-nav>
             </b-navbar>
         </div>
@@ -55,6 +55,14 @@
 #nav .nav-link {
     font-weight: normal;
     font-size: 2rem;
+}
+
+.link:first-child {
+    margin-left: 10%;
+}
+
+.link {
+    margin-left: 5%;
 }
 
 </style>
