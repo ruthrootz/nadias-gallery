@@ -1,8 +1,16 @@
 <template>
     <b-container fluid class="gallery">
         <div class="section">
-            <b-card-group deck>
-                <b-card v-for="image in images"
+            <b-card-group>
+            <b-card-group>
+                <b-card v-for="image in images_part_one"
+                        class="shadow text-center art-card"
+                        :img-src="image.source"
+                        :img-alt="image.title"
+                        img-top>
+                </b-card>
+            </b-card-group>
+                <b-card v-for="image in images_part_two"
                         class="shadow text-center art-card"
                         :img-src="image.source"
                         :img-alt="image.title"
@@ -20,7 +28,7 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 @Component
 export default class Gallery extends Vue {
 
-    private images: any[] = [
+    private images_part_one: any[] = [
         {
             source: 'https://placedog.net/500/500?random',
             title: 'test 1',
@@ -33,6 +41,9 @@ export default class Gallery extends Vue {
             source: 'https://placedog.net/500/500?random',
             title: 'test 3',
         },
+    ];
+
+    private images_part_two: any[] = [
         {
             source: 'https://placedog.net/500/500?random',
             title: 'test 4',
