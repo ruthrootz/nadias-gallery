@@ -1,18 +1,15 @@
 <template>
     <b-container fluid class="gallery">
-        <b-row>
-            <b-col v-for="image in images"
-                   :key="image.id"
-                   col
-                   no-gutters
-                   class="mb-2">
-                <b-card class="shadow text-center art-card"
+        <div class="section">
+            <b-card-group deck>
+                <b-card v-for="image in images"
+                        class="shadow text-center art-card"
                         :img-src="image.source"
                         :img-alt="image.title"
                         img-top>
                 </b-card>
-            </b-col>
-       </b-row>
+            </b-card-group>
+       </div>
     </b-container>
 </template>
 
