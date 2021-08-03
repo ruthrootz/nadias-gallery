@@ -68,12 +68,13 @@ a {
 }
 
 .gallery {
-    height: 100vh;
+    margin-top: 5%;
 }
 
 .art-card {
-    width: 30%;
-    margin: 3%;
+    margin: 2%;
+    max-width: 30%;
+    min-width: 30%;
 }
 
 </style>
