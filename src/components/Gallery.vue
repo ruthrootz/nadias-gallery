@@ -67,6 +67,10 @@ a {
     color: #42b983;
 }
 
+.gallery {
+    height: 100vh;
+}
+
 .art-card {
     width: 30%;
     margin: 3%;
