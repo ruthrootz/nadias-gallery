@@ -1,16 +1,19 @@
 <template>
-    <div class="gallery">
-        <div class="section">
-            <b-card-group>
-                <b-card v-for="image in images"
-                        class="shadow text-center art-card"
+    <b-container fluid class="gallery">
+        <b-row>
+            <b-col v-for="image in images"
+                   :key="image.id"
+                   col
+                   no-gutters
+                   class="mb-2">
+                <b-card class="shadow text-center art-card"
                         :img-src="image.source"
                         :img-alt="image.title"
                         img-top>
                 </b-card>
-            </b-card-group>
-       </div>
-    </div>
+            </b-col>
+       </b-row>
+    </b-container>
 </template>
 
 <script lang="ts">
@@ -73,8 +76,8 @@ a {
 
 .art-card {
     margin: 2%;
-    max-width: 30%;
     min-width: 30%;
+    max-width: 30%;
 }
 
 </style>
