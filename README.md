@@ -15,6 +15,13 @@
 - fade images into view on scroll
     - https://dev.to/selbekk/how-to-fade-in-content-as-it-scrolls-into-view-10j4
 
+### color theme
+- #732735
+- #D95970
+- #F2ACB2
+- #F2E9E4
+- #BF926B
+
 ## Project setup
 ```
 npm install
