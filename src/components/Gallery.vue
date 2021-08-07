@@ -18,14 +18,20 @@
                 </b-card>
             </b-card-group>
        </div>
+       <light-box :media="allImages"></light-box>
     </b-container>
 </template>
 
 <script lang="ts">
 
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import LightBox from 'vue-image-lightbox';
 
-@Component
+@Component({ 
+    components: {
+        LightBox,
+    },
+})
 export default class Gallery extends Vue {
 
     private allImages: any[] = [
