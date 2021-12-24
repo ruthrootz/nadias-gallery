@@ -2,10 +2,10 @@
     <b-container fluid class="p-4">
         <b-row class="section">
             <b-col>
-                <b-img v-for="image in allImages" class="shadow art-card" thumbnail fluid :src="image.src" :alt="image.caption"></b-img>
+                <b-img v-b-hover="handleHover(image)" v-for="image in allImages" class="shadow art-card" thumbnail fluid :src="image.src" :alt="image.caption"></b-img>
             </b-col>
         </b-row>
-        <light-box :media="allImages"></light-box>
+        <!-- <light-box :media="allImages"></light-box> -->
     </b-container>
 </template>
 
@@ -74,6 +74,11 @@ export default class Gallery extends Vue {
             caption: 'test 5',
         },
     ];
+
+    private handleHover(image: any): void {
+        image.isHovered = true;
+        this.images.forEach((i: any): void => i.isHovered = false);
+    }
 
 }
 
