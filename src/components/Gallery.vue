@@ -2,7 +2,17 @@
     <b-container fluid class="p-4">
         <b-row class="section">
             <b-col>
-                <b-img v-b-hover="handleHover(image)" v-for="image in allImages" class="shadow art-card" thumbnail fluid :src="image.src" :alt="image.caption"></b-img>
+                <span v-for="image in allImages"
+                    <b-img
+                        class="shadow art-card"
+                        v-b-hover="handleHover(image)"
+                        :class="image.isHovered ? 'hovered' : ''">
+                        thumbnail
+                        fluid
+                        :src="image.src"
+                        :alt="image.caption">
+                    </b-img>
+                </span>
             </b-col>
         </b-row>
         <!-- <light-box :media="allImages"></light-box> -->
@@ -26,58 +36,37 @@ export default class Gallery extends Vue {
             src: 'https://placedog.net/500/500?random',
             thumb: 'https://placedog.net/500/500?random', 
             caption: 'test 1',
+            isHovered: false,
         },
         {
             src: 'https://placedog.net/500/500?random',
             thumb: 'https://placedog.net/500/500?random', 
             caption: 'test 2',
+            isHovered: false,
         },
         {
             src: 'https://placedog.net/500/500?random',
             thumb: 'https://placedog.net/500/500?random', 
             caption: 'test 3',
+            isHovered: false,
         },
         {
             src: 'https://placedog.net/500/500?random',
             thumb: 'https://placedog.net/500/500?random', 
             caption: 'test 4',
+            isHovered: false,
         },
         {
             src: 'https://placedog.net/500/500?random',
             thumb: 'https://placedog.net/500/500?random', 
             caption: 'test 5',
+            isHovered: false,
         },
     ]; 
 
-    private imagesPartOne: any[] = [
-        {
-            src: 'https://placedog.net/500/500?random',
-            caption: 'test 1',
-        },
-        {
-            src: 'https://placedog.net/500/500?random',
-            caption: 'test 2',
-        },
-        {
-            src: 'https://placedog.net/500/500?random',
-            caption: 'test 3',
-        },
-    ];
-
-    private imagesPartTwo: any[] = [
-        {
-            src: 'https://placedog.net/500/500?random',
-            caption: 'test 4',
-        },
-        {
-            src: 'https://placedog.net/500/500?random',
-            caption: 'test 5',
-        },
-    ];
-
     private handleHover(image: any): void {
         image.isHovered = true;
-        this.images.forEach((i: any): void => i.isHovered = false);
+        this.allImages.forEach((i: any): void => i.isHovered = false);
     }
 
 }
@@ -111,6 +100,10 @@ a {
 .art-card {
     margin: 2%;
     width: 25%;
+}
+
+.isHovered {
+    width: 200%;
 }
 
 </style>
