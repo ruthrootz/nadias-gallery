@@ -2,11 +2,11 @@
     <b-container fluid class="p-4">
         <b-row class="section">
             <b-col>
-                <span v-for="image in allImages"
+                <span
+                    v-for="image in allImages"
+                    :class="image.isHovered ? 'hovered' : ''">
                     <b-img
                         class="shadow art-card"
-                        v-b-hover="handleHover(image)"
-                        :class="image.isHovered ? 'hovered' : ''">
                         thumbnail
                         fluid
                         :src="image.src"
@@ -65,8 +65,8 @@ export default class Gallery extends Vue {
     ]; 
 
     private handleHover(image: any): void {
-        image.isHovered = true;
         this.allImages.forEach((i: any): void => i.isHovered = false);
+        image.isHovered = true;
     }
 
 }
