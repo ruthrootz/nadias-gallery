@@ -2,32 +2,11 @@
     <b-container fluid class="p-4">
         <b-row class="section">
             <b-col>
-                <b-img class="shadow art-card" thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Image 1"></b-img>
-                <b-img class="shadow art-card" thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Image 1"></b-img>
-                <b-img class="shadow art-card" thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Image 1"></b-img>
-                <b-img class="shadow art-card" thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Image 1"></b-img>
+                <b-img v-for="image in allImages" class="shadow art-card" thumbnail fluid :src="image.src" :alt="image.caption"></b-img>
             </b-col>
         </b-row>
+        <light-box :media="allImages"></light-box>
     </b-container>
-        <!-- <div class="section">
-            <b-card-group>
-                <b-card-group>
-                    <b-card v-for="image in imagesPartOne"
-                            class="shadow text-center art-card"
-                            :img-src="image.src"
-                            :img-alt="image.caption"
-                            img-top>
-                    </b-card>
-                </b-card-group>
-                <b-card v-for="image in imagesPartTwo"
-                        class="shadow text-center art-card"
-                        :img-src="image.src"
-                        :img-alt="image.caption"
-                        img-top>
-                </b-card>
-            </b-card-group>
-       </div>
-       <light-box :media="allImages"></light-box> -->
 </template>
 
 <script lang="ts">
