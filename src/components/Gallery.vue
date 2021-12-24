@@ -1,6 +1,12 @@
 <template>
-    <b-container fluid class="gallery">
-        <div class="section">
+    <b-container fluid class="p-4 bg-dark">
+        <b-row>
+            <b-col>
+                <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Image 1"></b-img>
+            </b-col>
+        </b-row>
+    </b-container>
+        <!-- <div class="section">
             <b-card-group>
                 <b-card-group>
                     <b-card v-for="image in imagesPartOne"
@@ -18,8 +24,7 @@
                 </b-card>
             </b-card-group>
        </div>
-       <light-box :media="allImages"></light-box>
-    </b-container>
+       <light-box :media="allImages"></light-box> -->
 </template>
 
 <script lang="ts">
