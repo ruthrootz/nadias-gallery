@@ -9,7 +9,7 @@
 import Gallery from '@/components/Gallery.vue';
 
 export default {
-    name: 'Gallery',
+    name: 'Nadia\'s Gallery',
     components: {
         Gallery,
     },

@@ -1,7 +1,10 @@
 <template>
-    <b-container fluid class="p-4 bg-dark">
-        <b-row>
+    <b-container fluid class="p-4">
+        <b-row class="section">
             <b-col>
+                <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Image 1"></b-img>
+                <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Image 1"></b-img>
+                <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Image 1"></b-img>
                 <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Image 1"></b-img>
             </b-col>
         </b-row>
