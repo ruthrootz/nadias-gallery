@@ -7,6 +7,8 @@
                     :class="image.isHovered ? 'hovered' : ''">
                     <b-img
                         class="shadow art-card"
+                        @mouseover="image.isHovered = true"
+                        @mouseleave="image.isHovered = false"
                         thumbnail
                         fluid
                         :src="image.src"
@@ -64,7 +66,12 @@ export default class Gallery extends Vue {
         },
     ]; 
 
-    private handleHover(image: any): void {
+    private onHover(image: any): void {
+        this.allImages.forEach((i: any): void => i.isHovered = false);
+        image.isHovered = true;
+    }
+
+    private onUnhover(image: any): void {
         this.allImages.forEach((i: any): void => i.isHovered = false);
         image.isHovered = true;
     }
