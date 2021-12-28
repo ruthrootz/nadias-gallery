@@ -4,11 +4,11 @@
             <b-col>
                 <span
                     v-for="image in allImages"
-                    :class="image.isHovered ? 'hovered' : ''">
+                    @mouseover="image.isHovered = true"
+                    @mouseleave="image.isHovered = false">
                     <b-img
                         class="shadow art-card"
-                        @mouseover="image.isHovered = true"
-                        @mouseleave="image.isHovered = false"
+                        :class="image.isHovered ? 'hovered' : ''"
                         thumbnail
                         fluid
                         :src="image.src"
@@ -109,7 +109,7 @@ a {
     width: 25%;
 }
 
-.isHovered {
+.hovered {
     width: 200%;
 }
 
