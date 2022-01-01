@@ -2,10 +2,8 @@
     <b-container fluid class="p-4">
         <b-row class="section">
             <b-col>
-                <span
-                    v-for="image in allImages"
-                    @mouseover="image.isHovered = true"
-                    @mouseleave="image.isHovered = false">
+                <div class="zoom"
+                     v-for="image in allImages">
                     <b-img
                         class="shadow art-card"
                         :class="image.isHovered ? 'hovered' : ''"
@@ -14,7 +12,7 @@
                         :src="image.src"
                         :alt="image.caption">
                     </b-img>
-                </span>
+                </div>
             </b-col>
         </b-row>
         <!-- <light-box :media="allImages"></light-box> -->
