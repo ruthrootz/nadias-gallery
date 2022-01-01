@@ -2,7 +2,8 @@
     <b-container fluid class="p-4">
         <b-row class="section">
             <b-col>
-                <div class="art-card"
+                <div
+                     class="art-card"
                      v-for="image in allImages">
                     <b-img
                         class="shadow art-image zoom"
@@ -102,13 +103,10 @@ a {
 }
 
 .art-card {
-    margin: 2%;
-    width: 25%;
     display: inline;
 }
 
 .art-image {
-
 }
 
 .zoom {
