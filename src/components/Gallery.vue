@@ -2,11 +2,10 @@
     <b-container fluid class="p-4">
         <b-row class="section">
             <b-col>
-                <div class="zoom"
+                <div class="art-card"
                      v-for="image in allImages">
                     <b-img
-                        class="shadow art-card"
-                        :class="image.isHovered ? 'hovered' : ''"
+                        class="shadow art-image zoom"
                         thumbnail
                         fluid
                         :src="image.src"
@@ -105,10 +104,20 @@ a {
 .art-card {
     margin: 2%;
     width: 25%;
+    display: inline;
 }
 
-.hovered {
-    width: 200%;
+.art-image {
+
+}
+
+.zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
 }
 
 </style>
